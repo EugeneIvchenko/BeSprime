@@ -1,15 +1,67 @@
 body{
+  width:100%;
+  max-width: 1024px;
   background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.header{
+  white-space: nowrap;
+
+}
+.header div{
+
+  display: inline-block;
+
+}
+.l1{
+  margin-top: 1px ;
+  margin-bottom: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.l2{
+
+}
+.favicon{
+  border: 0%;
+  padding-left: 10px;
+
 }
 
-ul{
+.content{
+  width: 70%;
   margin: auto;
 }
-h5{
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-style: solid;
+
+
+.description{
+
+  margin-top: 5px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
 }
-#button2{
-  margin: 0 auto;
+h5{
+  margin-bottom: 2%;
+  border-bottom: 2px solid #FF0000;
+}
+.galery1 {
+   margin: 0 auto;
+   text-align: center;
+   min-width: 140px;
+   overflow: hidden;
+}
+.g1{
+  max-height: 350px;
+  max-width: 13.75%;
+  overflow: hidden;
+}
+
+
+
+.img{
+   float: left;
+   padding: 5%; /* небольшие оступы для изображений */
 }
