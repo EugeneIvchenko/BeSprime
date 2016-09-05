@@ -1,18 +1,15 @@
 body{
-  max-width: 1024px;
   width:100%;
+  max-width: 1024px;
   background-color: white;
-  margin:0% 15%;
-  padding: 0% 0%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .header{
   white-space: nowrap;
-
 }
 .header div{
-
   display: inline-block;
-
 }
 .l1{
   margin-top: 1px ;
@@ -23,11 +20,65 @@ body{
 .l2{
 
 }
-.favicon{
-  border: 0%;
-  padding-left: 10px;
 
+
+.contacts{
+  float: right;
 }
+
+#navbar ul { display: none; }
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar li { float: left; }
+#navbar ul li { float: none; }
+#navbar ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+#navbar li {
+  float: left;
+  position: relative;
+}
+#navbar { height: 30px; }
+#navbar ul {
+  display: none;
+  background-color: #f90;
+  position: absolute;
+  top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar {
+  height: 30px;
+  background-color: #666;
+  padding-left: 25px;
+  min-width: 470px;
+}
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
 
 .content{
   width: 70%;
@@ -38,43 +89,62 @@ body{
 
 
 .description{
-  padding-left:15%;
-  padding-right:15%;
+  padding: 0%;
   text-align: center;
-  margin-top: 5px;
+  margin: 7% 15%;
   padding-top: 10%;
   padding-bottom: 10%;
   border-top: 2px solid #F5F5F5;
   border-bottom: 2px solid #F5F5F5;
-}
 
-a{
-  margin-bottom: 2%;
+}
+.headline{
+  margin:10%;
   border-bottom: 2px solid #FF0000;
-}
 
+}
+.create{
+
+}
 .galery1 {
+   margin: 15% 0%;
    text-align: center;
    min-width: 140px;
-   overflow: hidden;
 }
+
 .g1{
   float: left;
-  text-align: center;
-  width: 20%;
+  width: 22%;
+  margin-right: 4%;
   overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
-  margin-right: 5%;
-  background: #DCDCDC; /* Для старых браузров */
-    background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+}
 
+.g12{
+  float: left;
+  width: 22%;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
 }
 
 .img{
-   height: 150px;/*change to procent*/
-   text-align: center;
+  text-align:justify;
+  height: 190px;
 }
+
 .g1:after {
+    content: ' ';
+  background: #000;
+	height: 99%;
+	left: 0;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	width: 20%;
+}
+.g12:after {
     content: ' ';
   background: #000;
 	height: 100%;
