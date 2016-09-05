@@ -1,9 +1,9 @@
 body{
-  width:100%;
   max-width: 1024px;
+  width:100%;
   background-color: white;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin:0% 15%;
+  padding: 0% 0%;
 }
 .header{
   white-space: nowrap;
@@ -31,37 +31,56 @@ body{
 
 .content{
   width: 70%;
+  position: absolute;;
   margin: auto;
+  text-align: center;
 }
 
 
 .description{
-
+  padding-left:15%;
+  padding-right:15%;
+  text-align: center;
   margin-top: 5px;
   padding-top: 10%;
   padding-bottom: 10%;
   border-top: 2px solid #F5F5F5;
   border-bottom: 2px solid #F5F5F5;
 }
-h5{
+
+a{
   margin-bottom: 2%;
   border-bottom: 2px solid #FF0000;
 }
+
 .galery1 {
-   margin: 0 auto;
    text-align: center;
    min-width: 140px;
    overflow: hidden;
 }
 .g1{
-  max-height: 350px;
-  max-width: 13.75%;
+  float: left;
+  text-align: center;
+  width: 20%;
   overflow: hidden;
+  position: relative;
+  margin-right: 5%;
+  background: #DCDCDC; /* Для старых браузров */
+    background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+
 }
 
-
-
 .img{
-   float: left;
-   padding: 5%; /* небольшие оступы для изображений */
+   height: 150px;/*change to procent*/
+   text-align: center;
+}
+.g1:after {
+    content: ' ';
+  background: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	width: 20%;
 }
