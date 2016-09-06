@@ -1,16 +1,12 @@
-body{
+.boder{
   width:100%;
   max-width: 1024px;
   background-color: white;
-  margin-left: 15%;
-  margin-right: 15%;
 }
 .header{
   white-space: nowrap;
 }
-.header div{
-  display: inline-block;
-}
+
 .l1{
   margin-top: 1px ;
   margin-bottom: 1px;
@@ -81,7 +77,6 @@ body{
 #navbar ul li:hover { background-color: #666; }
 
 .content{
-  width: 70%;
   position: absolute;;
   margin: auto;
   text-align: center;
@@ -98,20 +93,16 @@ body{
   border-bottom: 2px solid #F5F5F5;
 
 }
-.headline{
-  margin:10%;
-  border-bottom: 2px solid #FF0000;
-
-}
-.create{
-
-}
 .galery1 {
-   margin: 15% 0%;
-   text-align: center;
-   min-width: 140px;
+  text-align: center;
+  min-width: 140px;
+  margin-bottom: 150%
 }
-
+.tabulation{
+  margin: 0;
+  padding: 0;
+  margin: 7% 0%;
+}
 .g1{
   float: left;
   width: 22%;
@@ -120,7 +111,6 @@ body{
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
 }
-
 .g12{
   float: left;
   width: 22%;
@@ -128,16 +118,14 @@ body{
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
 }
-
 .img{
-  text-align:justify;
   height: 190px;
 }
 
 .g1:after {
     content: ' ';
   background: #000;
-	height: 99%;
+	height: 100%;
 	left: 0;
 	opacity: 0.7;
 	position: absolute;
@@ -153,4 +141,75 @@ body{
 	position: absolute;
 	top: 0;
 	width: 20%;
+}
+.galery1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  min-width: 140px;
+}
+.hidden{
+  visibility: hidden;
+}
+.block_g2_1{
+  float: left;
+  width: 29%;
+  height:150px;
+  overflow: hidden;
+  margin-right: 6.5%;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.block_g2_2{
+  float: left;
+  width: 29%;
+  height:150px;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.pic{
+  position: absolute;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+}
+.pic:after{
+  content: ' ';
+  background: #000;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+.text{
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+.footer{
+  width: 100%;
+}
+.top{
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  background-color: darkgrey;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+.low{
+  margin: 0;
+  padding: 0;
+  width:100%;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  height: 30px;
 }
