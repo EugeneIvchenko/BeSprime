@@ -7,12 +7,9 @@ body{
 }
 .header{
   white-space: nowrap;
-
 }
 .header div{
-
   display: inline-block;
-
 }
 .l1{
   margin-top: 1px ;
@@ -23,49 +20,12 @@ body{
 .l2{
 
 }
-.favicon{
-  border: 0%;
-  padding-left: 10px;
-
-}
-
-.content{
-  width: 70%;
-  position: absolute;;
-  margin: auto;
-  text-align: center;
-}
 
 
-.description{
-  padding-left:15%;
-  padding-right:15%;
-  text-align: center;
-  margin-top: 5px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  border-top: 2px solid #F5F5F5;
-  border-bottom: 2px solid #F5F5F5;
-}
-h5{
-  margin-bottom: 2%;
-  border-bottom: 2px solid #FF0000;
-}
-.galery1 {
-   text-align: center;
-   min-width: 140px;
-   overflow: hidden;
-}
-.g1{
-  float: left;
-  max-width: 15%;
-  overflow: hidden;
-   padding: 5%;
+.contacts{
+  float: right;
 }
 
-.img{
-  height: 150px;
-}
 #navbar ul { display: none; }
 #navbar li:hover ul { display: block; }
 #navbar, #navbar ul {
@@ -119,3 +79,78 @@ h5{
 #navbar ul li { float: none; }
 #navbar li:hover { background-color: #f90; }
 #navbar ul li:hover { background-color: #666; }
+
+.content{
+  width: 70%;
+  position: absolute;;
+  margin: auto;
+  text-align: center;
+}
+
+
+.description{
+  padding: 0%;
+  text-align: center;
+  margin: 7% 15%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+
+}
+.headline{
+  margin:10%;
+  border-bottom: 2px solid #FF0000;
+
+}
+.create{
+
+}
+.galery1 {
+   margin: 15% 0%;
+   text-align: center;
+   min-width: 140px;
+}
+
+.g1{
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+
+.g12{
+  float: left;
+  width: 22%;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+
+.img{
+  text-align:justify;
+  height: 190px;
+}
+
+.g1:after {
+    content: ' ';
+  background: #000;
+	height: 99%;
+	left: 0;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	width: 20%;
+}
+.g12:after {
+    content: ' ';
+  background: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	width: 20%;
+}
