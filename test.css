@@ -235,3 +235,46 @@ body{
   background-color: black;
   height: 30px;
 }
+.form{
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  width: 20%;
+  height: 30%;
+  background-color: #F5F5F5;
+}
+.nadpis{
+  padding-bottom: 5%;
+}
+#user{
+  height: 30px;
+  width: 80%;
+  border: none;
+  margin-bottom: 5%;
+  color: #A9A9A9;
+}
+#email{
+  height: 30px;
+  width: 80%;
+  border: none;
+  margin-bottom: 5%;
+  color: #A9A9A9;
+}
+#message{
+  border: none;
+  margin-bottom: 5%;
+  resize:none;
+  color: #A9A9A9;
+}
+
+#send{
+  margin-top: 5%;
+  border: none;
+background-color: #FF0000;
+padding: 14px 40px;
+ color: #FFFFFF;
+ font-size: 10px;
+ font-family: HelveticaNeueCyr-Bold;
+ text-decoration: none;
+ vertical-align: middle;
+}
