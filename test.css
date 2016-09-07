@@ -92,71 +92,71 @@ body{
   border-bottom: 2px solid #F5F5F5;
   text-align: center;
 }
+.create{
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .tabulation{
   margin-top: 5%;
   text-align: center;
+  margin-bottom: 5%;
 }
 .tabulation a{
   border-bottom: 2px solid #FF0000;
 }
-.galery1 {
-  text-align: center;
-  min-width: 140px;
-  margin-bottom: 150%
-}
-
-.g1{
+.block_g1_1{
   float: left;
   width: 22%;
-  margin-right: 4%;
+  height:190px;
   overflow: hidden;
+  margin-right: 4%;
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
 }
-.g12{
+.block_g1_2{
   float: left;
   width: 22%;
+  height:190px;
   overflow: hidden;
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
 }
 .img{
-  height: 190px;
+  position: absolute;
 }
-
-.g1:after {
-    content: ' ';
+.img img{
+  width: 100%;
+  height: 100%;
+}
+.img:after{
+  content: ' ';
   background: #000;
-	height: 100%;
-	left: 0;
-	opacity: 0.7;
-	position: absolute;
-	top: 0;
-	width: 20%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  height: 100%;
 }
-.g12:after {
-    content: ' ';
-  background: #000;
-	height: 100%;
-	left: 0;
-	opacity: 0.7;
-	position: absolute;
-	top: 0;
-	width: 20%;
-}
-.galery1 {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  text-align: center;
-  min-width: 140px;
+.text1{
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 .hidden{
   visibility: hidden;
 }
+.offer{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .block_g2_1{
   float: left;
   width: 29%;
-  height:150px;
+  height:190px;
   overflow: hidden;
   margin-right: 6.5%;
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
@@ -165,7 +165,7 @@ body{
 .block_g2_2{
   float: left;
   width: 29%;
-  height:150px;
+  height:190px;
   overflow: hidden;
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
@@ -194,6 +194,30 @@ body{
   position: absolute;
   bottom: 0;
 }
+.do{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.block_g3_1{
+  float: left;
+  width: 33%;
+  height:150px;
+  overflow: hidden;
+  margin-right: 0.5%;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.block_g3_2{
+  float: left;
+  width: 33%;
+  height:150px;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.button2{
+  text-align: center;
+}
 .footer{
   width: 100%;
 }
@@ -207,11 +231,7 @@ body{
   border-right: 2px solid red;
 }
 .low{
-  margin: 0;
-  padding: 0;
   width:100%;
-  left: 0;
-  bottom: 0;
   background-color: black;
   height: 30px;
 }
