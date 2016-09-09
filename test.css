@@ -1,5 +1,4 @@
 body{
-  width: 100%;
   background-color: white;
 }
 .header{
@@ -17,9 +16,17 @@ body{
 .contacts{
   float: right;
 }
-.menu{
-  margin-left: 15%;
+.menu img{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.navbar{
   margin-right: 15%;
+  margin-left: 15%;
+}
+#navbar{
+  position: absolute;
 }
 #navbar ul { display: none; }
 #navbar li:hover ul { display: block; }
@@ -28,7 +35,9 @@ body{
   padding: 0;
   list-style-type: none;
 }
-#navbar li { float: left; }
+#navbar li { float: left;
+
+ }
 #navbar ul li { float: none; }
 #navbar ul {
   display: none;
@@ -54,7 +63,6 @@ body{
 }
 #navbar {
   height: 30px;
-  background-color: #666;
   padding-left: 25px;
   min-width: 470px;
 }
@@ -65,8 +73,7 @@ body{
 }
 #navbar li a {
   display: block;
-  padding: 6px;
-  width: 100px;
+  width: 100%;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -78,9 +85,11 @@ body{
   margin-left: 15%;
   margin-right: 15%;
   float: left;
+  position: absolute;
 }
 .estimate{
   margin-left: 10%;
+  position: absolute;
 }
 .description{
   margin-left: 15%;
