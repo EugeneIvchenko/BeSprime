@@ -21,6 +21,10 @@ body{
   width: 100%;
   position: relative;
 }
+.hand img{
+  position: absolute;
+  float: right;
+}
 .navbar{
   margin-right: 15%;
   margin-left: 15%;
@@ -38,7 +42,8 @@ body{
 #navbar li { float: left;
 
  }
-#navbar ul li { float: none; }
+#navbar ul li { float: none;
+}
 #navbar ul {
   display: none;
   position: absolute;
@@ -47,6 +52,10 @@ body{
 #navbar li {
   float: left;
   position: relative;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 #navbar { height: 30px; }
 #navbar ul {
@@ -79,14 +88,37 @@ body{
   text-align: center;
 }
 #navbar ul li { float: none; }
-#navbar li:hover { background-color: #f90; }
+#navbar li:hover { background-color: #666; }
 #navbar ul li:hover { background-color: #666; }
+.slogan{
+  font-size: 40px;
+  color:#FFFFFF;
+}
+.opis{
+  font-size: 16px;
+  color:#FFFFFF;
+}
+.button{
+float: left;
+}
+#point{
+  margin-top: 5%;
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 14px 40px;
+  font-size: 10px;
+  font-family: HelveticaNeueCyr-Bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
 .about{
+  margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
   float: left;
   position: absolute;
 }
+
 .estimate{
   margin-left: 10%;
   position: absolute;
