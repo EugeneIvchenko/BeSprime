@@ -6,12 +6,19 @@ body{
   margin-right: 15%;
   text-align: center;
   margin-bottom: 1%;
+  display: none;
 }
 .header div{
   display: inline-block;
 }
 .language{
-  float:left;
+  display:block;
+}
+
+@media (max-width: 1200px) {
+  .language{
+    display: none;
+  }
 }
 .contacts{
   float: right;
