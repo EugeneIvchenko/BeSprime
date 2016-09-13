@@ -27,69 +27,63 @@ body{
 }
 .navbar{
   margin-right: 15%;
-  margin-left: 15%;
+  margin-left: 13%;
 }
 #navbar{
   position: absolute;
-}
-#navbar ul { display: none; }
-#navbar li:hover ul { display: block; }
+}/*размещение меню на фоне*/
+#navbar ul {
+  display: none;
+} /*скрыть выпадающий список*/
+#navbar li:hover ul {
+  display: block;
+}/*отображение выпадающего списка*/
 #navbar, #navbar ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-#navbar li { float: left;
-
- }
-#navbar ul li { float: none;
-}
-#navbar ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-}
+}/*убрали маркеры и отступы стандартные*/
 #navbar li {
   float: left;
-  position: relative;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-#navbar { height: 30px; }
-#navbar ul {
-  display: none;
-  background-color: #f90;
-  position: absolute;
-  top: 100%;
-}
-#navbar li:hover ul { display: block; }
-#navbar, #navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-#navbar {
-  height: 30px;
-  padding-left: 25px;
-  min-width: 470px;
-}
+}/*сформировали меню горизонтально*/
+#navbar ul li {
+  float: left;
+}/*выпадающее меню делаем вертикальным*/
 #navbar li {
   float: left;
   position: relative;
   height: 100%;
-}
+}/*выпадающее меню не смещает нижний контент */
+#navbar {
+  background-color: none;
+  min-width: 470px;
+}/*вид менюхи*/
+#navbar ul {
+  display: none;
+  background-color: none;
+  position: absolute;
+  top: 100%;
+}/*вид подменю*/
 #navbar li a {
   display: block;
-  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 23.5px;
   color: #fff;
   text-decoration: none;
   text-align: center;
-}
-#navbar ul li { float: none; }
-#navbar li:hover { background-color: #666; }
-#navbar ul li:hover { background-color: #666; }
+}/*размеры и отступы между блоками меню*/
+#navbar li:hover {
+  background-color: #D3D3D3;
+}/*цвет меню при наведении*/
+#navbar li a:hover {
+  color:#000000;
+}/*цвет текста меню при наведении*/
+#navbar ul li:hover {
+  background-color: #666;
+  text-decoration:underline;
+}/*цвет при наведении на подменю*/
 .slogan{
   font-size: 40px;
   color:#FFFFFF;
