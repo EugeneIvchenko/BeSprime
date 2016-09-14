@@ -2,8 +2,8 @@ body{
   background-color: white;
 }
 .header{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
   margin-bottom: 1%;
 }
@@ -25,65 +25,103 @@ body{
   position: absolute;
   float: right;
 }
-.navbar{
-  margin-right: 15%;
-  margin-left: 13%;
+@font-face {
+font-family: HelveticaNeueCyr-Medium;
+src: url(besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
 }
-#navbar{
+.navbar{
+  text-transform: uppercase;
+  font-family: HelveticaNeueCyr-Medium;
+  font-size: 7pt;
+  margin-right: 20%;
+  margin-left: 18%;
   position: absolute;
 }/*размещение меню на фоне*/
-#navbar ul {
+.bar {
+  background-color: none;
+  min-width: 470px;
+}/*вид менюхи*/
+.podmenu {
   display: none;
+  position: absolute;
+  top: 100%;
 } /*скрыть выпадающий список*/
-#navbar li:hover ul {
+.bar li:hover ul {
   display: block;
 }/*отображение выпадающего списка*/
-#navbar, #navbar ul {
+.bar, .podmenu {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }/*убрали маркеры и отступы стандартные*/
-#navbar li {
-  float: left;
-}/*сформировали меню горизонтально*/
-#navbar ul li {
-  float: left;
-}/*выпадающее меню делаем вертикальным*/
-#navbar li {
+.bar li {
   float: left;
   position: relative;
   height: 100%;
 }/*выпадающее меню не смещает нижний контент */
-#navbar {
-  background-color: none;
-  min-width: 470px;
-}/*вид менюхи*/
-#navbar ul {
-  display: none;
-  background-color: none;
-  position: absolute;
-  top: 100%;
-}/*вид подменю*/
-#navbar li a {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 23.5px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}/*размеры и отступы между блоками меню*/
-#navbar li:hover {
-  background-color: #D3D3D3;
-}/*цвет меню при наведении*/
-#navbar li a:hover {
+.main_li a, .first_li a, .last_li a{
+display: block;
+padding-top: 12px;
+padding-bottom: 12px;
+text-decoration: none;
+text-align: center;
+padding-left: 23px;
+padding-right: 23.5px;
+}
+.main_li a, .first_li a{
+  color: #FFFFFF;
+}
+.first_li a, .last_li a{
+  font-weight:bold;
+}
+.last_li a{
+  background-color: #DCDCDC;
+  color: #000000;
+}
+.main_li a {
+  opacity: 0.8;
+}
+.podmenu:hover{
+  background-color: rgba(0, 0, 0, 0.4);;
+}
+.podmenu li{
+  font-size: 12px;
+}
+.podmenu li a{
+  opacity: 1;
+  padding-right: 0px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.PO {
+  margin-right: 50px;
+}
+.first_podmenu{
+  margin-top: 10px;
+}
+.last_podmenu{
+  margin-bottom: 10px;
+}
+.main_li a:hover, .first_li a:hover{
   color:#000000;
 }/*цвет текста меню при наведении*/
-#navbar ul li:hover {
-  background-color: #666;
+.podmenu li a:hover {
+  color: #FFFFFF;
+  background-color: none;
   text-decoration:underline;
 }/*цвет при наведении на подменю*/
+.main_li:hover, .first_li:hover{
+  background-color: #FFFFFF
+}
+.line li{
+  margin-top:2.4%;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(0,0,100,0), rgba(0,0,100,0.1) 50%, rgba(0,0,100,0)); /* указываем угол  0deg для того чтобы градиент начинался от левого края, иначе градиент пойдёт сверху */
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 1px;
+}
 .slogan{
   font-size: 40px;
   color:#FFFFFF;
@@ -96,8 +134,7 @@ body{
 float: left;
 }
 #point{
-  margin-top: 5%;
-  border: 1px solid #FFFFFF;
+  border: none;
   background-color: #FFFFFF;
   padding: 14px 40px;
   font-size: 10px;
@@ -106,7 +143,7 @@ float: left;
   vertical-align: middle;
 }
 .about{
-  margin-top: 10%;
+  margin-top: 12%;
   margin-left: 15%;
   margin-right: 15%;
   float: left;
@@ -250,7 +287,12 @@ float: left;
   background: linear-gradient(to top, #FFFFFF, #DCDCDC);
   position: relative;
 }
+.estimate{
+  margin-top: 10%;
+}
 .button2{
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
 }
 .footer{
@@ -305,7 +347,7 @@ float: left;
 #send{
   margin-top: 5%;
   border: none;
-background-color: #FF0000;
+background-color: #f50906;
 padding: 14px 40px;
  color: #FFFFFF;
  font-size: 10px;
