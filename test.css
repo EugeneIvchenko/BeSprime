@@ -1,0 +1,357 @@
+body{
+  background-color: white;
+}
+.header{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.header div{
+  display: inline-block;
+}
+.language{
+  float:left;
+}
+.contacts{
+  float: right;
+}
+.menu img{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.hand img{
+  position: absolute;
+  float: right;
+}
+@font-face {
+font-family: HelveticaNeueCyr-Medium;
+src: url(besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
+}
+.navbar{
+  text-transform: uppercase;
+  font-family: HelveticaNeueCyr-Medium;
+  font-size: 7pt;
+  margin-right: 20%;
+  margin-left: 18%;
+  position: absolute;
+}/*размещение меню на фоне*/
+.bar {
+  background-color: none;
+  min-width: 470px;
+}/*вид менюхи*/
+.podmenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+} /*скрыть выпадающий список*/
+.bar li:hover ul {
+  display: block;
+}/*отображение выпадающего списка*/
+.bar, .podmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}/*убрали маркеры и отступы стандартные*/
+.bar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}/*выпадающее меню не смещает нижний контент */
+.main_li a, .first_li a, .last_li a{
+display: block;
+padding-top: 12px;
+padding-bottom: 12px;
+text-decoration: none;
+text-align: center;
+padding-left: 23px;
+padding-right: 23.5px;
+}
+.main_li a, .first_li a{
+  color: #FFFFFF;
+}
+.first_li a, .last_li a{
+  font-weight:bold;
+}
+.last_li a{
+  background-color: #DCDCDC;
+  color: #000000;
+}
+.main_li a {
+  opacity: 0.8;
+}
+.podmenu:hover{
+  background-color: rgba(0, 0, 0, 0.4);;
+}
+.podmenu li{
+  font-size: 7pt;
+}
+.podmenu li a{
+  opacity: 1;
+  padding-right: 0px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.PO {
+  margin-right: 50px;
+}
+.first_podmenu{
+  margin-top: 10px;
+}
+.last_podmenu{
+  margin-bottom: 10px;
+}
+.main_li a:hover, .first_li a:hover{
+  color:#000000;
+}/*цвет текста меню при наведении*/
+.podmenu li a:hover {
+  color: #FFFFFF;
+  background-color: none;
+  text-decoration:underline;
+}/*цвет при наведении на подменю*/
+.main_li:hover, .first_li:hover{
+  background-color: #FFFFFF
+}
+.line li{
+  margin-top:2.4%;
+  position: absolute;
+  background-image: linear-gradient(0deg, rgba(0,0,100,0), rgba(0,0,100,0.1) 50%, rgba(0,0,100,0)); /* указываем угол  0deg для того чтобы градиент начинался от левого края, иначе градиент пойдёт сверху */
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% 1px;
+}
+.slogan{
+  font-size: 40px;
+  color:#FFFFFF;
+}
+.opis{
+  font-size: 16px;
+  color:#FFFFFF;
+}
+.button{
+float: left;
+}
+#point{
+  border: none;
+  background-color: #FFFFFF;
+  padding: 14px 40px;
+  font-size: 10px;
+  font-family: HelveticaNeueCyr-Bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.about{
+  margin-top: 12%;
+  margin-left: 15%;
+  margin-right: 15%;
+  float: left;
+  position: absolute;
+}
+
+.estimate{
+  margin-left: 10%;
+  position: absolute;
+}
+.description{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+  text-align: center;
+}
+.create{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.tabulation{
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.tabulation a{
+  border-bottom: 2px solid #FF0000;
+}
+.block_g1_1{
+  float: left;
+  width: 22%;
+  height:190px;
+  overflow: hidden;
+  margin-right: 4%;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.block_g1_2{
+  float: left;
+  width: 22%;
+  height:190px;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.img{
+  position: absolute;
+}
+.img img{
+  width: 100%;
+  height: 100%;
+}
+.img:after{
+  content: ' ';
+  background: #000;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  width: 20%;
+  height: 100%;
+}
+.text1{
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+.hidden{
+  visibility: hidden;
+}
+.offer{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.block_g2_1{
+  float: left;
+  width: 29%;
+  height:190px;
+  overflow: hidden;
+  margin-right: 6.5%;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.block_g2_2{
+  float: left;
+  width: 29%;
+  height:190px;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.pic{
+  position: absolute;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+}
+.pic:after{
+  content: ' ';
+  background: #000;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+.text{
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+.do{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.block_g3_1{
+  float: left;
+  width: 33%;
+  height:150px;
+  overflow: hidden;
+  margin-right: 0.5%;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.block_g3_2{
+  float: left;
+  width: 33%;
+  height:150px;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF, #DCDCDC);
+  position: relative;
+}
+.estimate{
+  margin-top: 10%;
+}
+.button2{
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+.footer{
+  width: 100%;
+}
+.top{
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  background-color: darkgrey;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+.low{
+  width:100%;
+  background-color: black;
+  height: 30px;
+}
+.form{
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  width: 20%;
+  height: 30%;
+  background-color: #F5F5F5;
+}
+.nadpis{
+  padding-bottom: 5%;
+}
+#user{
+  height: 30px;
+  width: 80%;
+  border: none;
+  margin-bottom: 5%;
+  color: #A9A9A9;
+}
+#email{
+  height: 30px;
+  width: 80%;
+  border: none;
+  margin-bottom: 5%;
+  color: #A9A9A9;
+}
+#message{
+  border: none;
+  margin-bottom: 5%;
+  resize:none;
+  color: #A9A9A9;
+}
+
+#send{
+  margin-top: 5%;
+  border: none;
+background-color: #f50906;
+padding: 14px 40px;
+ color: #FFFFFF;
+ font-size: 10px;
+ font-family: HelveticaNeueCyr-Bold;
+ text-decoration: none;
+ vertical-align: middle;
+}
