@@ -1,0 +1,48 @@
+body{
+  background-color: white;
+}
+.header{
+  display: inline-block;
+}
+.leftpart{
+  margin-left: 15%;
+  height:100px;
+  width:95px;
+  display: table;
+}
+.language{
+  float: left;
+  height: 20px;
+}
+.language a{
+  font-size: 7pt;
+  top: 0;
+  padding: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.language div{
+  display: inline-block;
+}
+.logos {
+  margin-top: 5px;
+  float: left;
+}
+.logos div{
+  display:inline-block;
+}
+.logos img{
+  height: 27px;
+  width:27px;
+}
+.logo div{
+  display: inline-block;
+}
+@media (max-width:1200px) {
+  .leftpart{
+    visibility: hidden;
+    display: none;
+  }
+}
