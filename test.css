@@ -2,30 +2,88 @@ body{
   background-color: white;
   margin: 0;
 }
-.header{
+/*Header*/
+.leftpart{
+  top:0;
+  float:left;
   margin-left: 20%;
-  margin-right: 20%;
-  text-align: center;
-  margin-bottom: 1%;
-}
-.header div{
-  display: inline-block;
+  height:100px;
+  width:95px;
+  display: table;
 }
 .language{
+  float: left;
+  height: 20px;
+}
+.language a{
+  font-size: 7pt;
+  top: 0;
+  padding: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.language div{
+  display: inline-block;
+}
+.logos {
+  float: left;
+}
+.logos div{
+  display:inline-block;
+}
+.logos img{
+  height: 27px;
+  width:27px;
+}
+.logo{
   float:left;
+  margin-top: 18px;
+  margin-left: 275px;
 }
+.logo div{
+  display: inline-block;
+}
+.favicon{
+  margin: 0;
+  padding: 0;
+}
+.favicon img{
+  height:45px;
+  width:45px;
+}
+.title{
+  font-size: 18pt;
+}
+
 .contacts{
-  float: right;
+  margin-top: 5px;
+  margin-right: 15%;
+  float:right;
 }
+.top_contacts{
+
+}
+.low_contacts{
+
+}
+@media (max-width:1200px) {
+  .leftpart{
+    display: none;
+  }
+  .logo{
+    margin: 0px;
+    margin-right:
+  }
+}
+/*Menu*/
 .menu img{
   float: left;
   width: 100%;
   position: relative;
 }
-.hand img{
-  position: absolute;
-  float: right;
-}
+
 @font-face {
 font-family: HelveticaNeueCyr-Medium;
 src: url(besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
