@@ -1,0 +1,393 @@
+body{
+  background-color: white;
+  margin: 0;
+}
+.header{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+.header div{
+  display: inline-block;
+}
+.language{
+  float:left;
+}
+.contacts{
+  float: right;
+}
+.menu img{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.hand img{
+  position: absolute;
+  float: right;
+}
+@font-face {
+font-family: HelveticaNeueCyr-Medium;
+src: url(C:/Users/TITO/WebstormProjects/BeSprime/besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
+}
+.navbar{
+  text-transform: uppercase;
+  font-family: HelveticaNeueCyr-Medium;
+  font-size: 7pt;
+  margin-right: 20%;
+  margin-left: 18%;
+  position: absolute;
+}/*размещение меню на фоне*/
+.bar {
+  background-color: none;
+  min-width: 470px;
+}/*вид менюхи*/
+.podmenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+} /*скрыть выпадающий список*/
+.bar li:hover ul {
+  display: block;
+}/*отображение выпадающего списка*/
+.bar, .podmenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}/*убрали маркеры и отступы стандартные*/
+.bar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}/*выпадающее меню не смещает нижний контент */
+.main_li a, .first_li a, .last_li a{
+display: block;
+padding-top: 12px;
+padding-bottom: 12px;
+text-decoration: none;
+text-align: center;
+padding-left: 23px;
+padding-right: 23.5px;
+}
+.main_li a, .first_li a{
+  color: #FFFFFF;
+}
+.first_li a, .last_li a{
+  font-weight:bold;
+}
+.last_li a{
+  background-color: #DCDCDC;
+  color: #000000;
+}
+.main_li a {
+  opacity: 0.8;
+}
+.podmenu:hover{
+  background-color: rgba(0, 0, 0, 0.4);;
+}
+.podmenu li{
+  font-size: 7pt;
+}
+.podmenu li a{
+  opacity: 1;
+  padding-right: 0px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.PO {
+  margin-right: 50px;
+}
+.first_podmenu{
+  margin-top: 10px;
+}
+.last_podmenu{
+  margin-bottom: 10px;
+}
+.main_li a:hover, .first_li a:hover{
+  color:#000000;
+}/*цвет текста меню при наведенитрмлтти*/
+.podmenu li a:hover {
+  color: #FFFFFF;
+  background-color: none;
+  text-decoration:underline;
+}/*цвет при наведении на подменю*/
+.main_li:hover, .first_li:hover{
+  background-color: #FFFFFF
+}
+
+.slogan{
+  font-size: 40px;
+  color:#FFFFFF;
+}
+.opis{
+  font-size: 16px;
+  color:#FFFFFF;
+}
+
+.about{
+  margin-top: 100px;
+  text-align: center;
+  position: absolute;
+  margin-bottom: 90px;
+}
+.description{
+  height: 450px;
+}
+.zzz{
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-top: 80px;
+  width: 34%;
+  text-align: left;
+  float: left;
+}
+.description_picture img{
+  margin-top: 160px;
+  position: relative;
+  height: 200px;
+  float: left;
+}
+#point{
+  margin-top: 40px;
+  margin-bottom: 90px;
+  float: left;
+  border: none;
+  background-color: #FF0000;
+  color: white;
+  padding: 14px 40px;
+  font-size: 10px;
+  font-family: HelveticaNeueCyr-Bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.create{
+  background: #DCDCDC;
+  height: 400px;
+}
+.parts{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.tabulation{
+  margin-top: 5%;
+  padding-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.tabulation a{
+  border-bottom: 2px solid #FF0000;
+}
+.block_g1_1{
+  float: left;
+  width: 22%;
+  height:190px;
+  margin-right: 4%;
+  position: relative;
+}
+.block_g1_2{
+  float: left;
+  width: 22%;
+  height:190px;
+  margin-right: 4%;
+  position: relative;
+}
+.block_g1_3{
+  float: left;
+  width: 22%;
+  height:190px;
+  margin-right: 4%;
+  position: relative;
+}
+.block_g1_4{
+  float: left;
+  width: 22%;
+  height:190px;
+  position: relative;
+}
+.img{
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+.img img{
+  width: 70%;
+  height: 70%;
+  text-align: center;
+}
+.text1{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 120px;
+}
+.text1 span{
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+@font-face {
+font-family: HelveticaNeueCyr-Roman;
+src: url(C:/Users/TITO/WebstormProjects/BeSprime/besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
+}
+.description_min{
+  font-family: HelveticaNeueCyr-Roman;
+  font-size: 12px;
+  background: #F5F5F5;
+  margin-top: 20px;
+  position: absolute;
+  height: 90px;
+  width:190px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.offer{
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 250px;
+}
+
+.block_g2_1{
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+  height:190px;
+  position: relative;
+}
+.block_g2_2{
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+  height:190px;
+  position: relative;
+}
+.block_g2_3{
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+  height:190px;
+  position: relative;
+}
+.block_g2_4{
+  float: left;
+  width: 22%;
+  height:190px;
+  position: relative;
+}
+.pic{
+  position: absolute;
+}
+.pic img{
+  width: 70%;
+  height: 70%;
+}
+.text{
+  font-size: 100%;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  text-align: center;
+  margin-top: 120px;
+}
+.polosa{
+  height: 80px;
+  background-color: #DCDCDC;
+  margin-bottom: -5%;
+}
+.do{
+  background-color: #DCDCDC;
+  height: 1050px;
+}
+.do_white{
+  background-color: #FFFFFF;
+  margin-right: 175px;
+  margin-left: 190px;
+  height: 1000px;
+}
+.do img{
+  height: 100%;
+  width: 100%;
+}
+.block_g3_1, .block_g3_4{
+  margin-left: 75px;
+  float: left;
+  width: 28%;
+  margin-right: 3px;
+  position: relative;
+  margin-bottom: -2px;
+}
+.block_g3_2, .block_g3_5{
+  float: left;
+  width: 28%;
+  margin-right: 3px;
+  position: relative;
+  margin-bottom: -2px;
+}
+.block_g3_3, .block_g3_6{
+  float: left;
+  width: 28%;
+  position: relative;
+  margin-right: 75px;
+  margin-bottom: -2px;
+}
+.block_g3_8{
+  width: 28%;
+  position: relative;
+  margin-left: 353px;
+}
+.estimate{
+  margin-top: 10%;
+}
+.button2{
+  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.form{
+  margin-top: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  width: 20%;
+  height: 30%;
+  background-color: #F5F5F5;
+}
+.nadpis{
+  padding-bottom: 5%;
+}
+#user{
+  height: 30px;
+  width: 80%;
+  border: none;
+  margin-bottom: 5%;
+  color: #A9A9A9;
+}
+#email{
+  height: 30px;
+  width: 80%;
+  border: none;
+  margin-bottom: 5%;
+  color: #A9A9A9;
+}
+#message{
+  border: none;
+  margin-bottom: 5%;
+  resize:none;
+  color: #A9A9A9;
+}
+
+#send{
+  margin-top: 5%;
+  border: none;
+  background-color: #f50906;
+  padding: 14px 40px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-family: HelveticaNeueCyr-Bold;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/*коммит
