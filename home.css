@@ -245,11 +245,11 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     position: relative;
   }
   .navbar{
-    margin-left: 20%;
+    margin-left: 18.5%;
     margin-right: 20%;
     top:80px;
     position: absolute;
-    width: 60%;
+    width: 61.5%;
     display: table;
     background-color: none;
     border: none;
@@ -267,34 +267,30 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
 
   .menu li a{
   display: block;
-    padding: 10px 5px;
-
+    padding: 12px 5px;
     text-transform: uppercase;
     font-family: HelveticaNeueCyr-Medium;
-    font-size: 10pt;
+    font-size: 7pt;
     text-decoration:none;
     color:#ffffff;
     text-align: center;
+    opacity: 0.8;
     text-transform: uppercase;
+    font-weight:bold;
   }
   #first_li{
-    padding-left: 0;
-    margin-left: 0;
-    float: left;
+    opacity: 1;
   }
   #last_li{
     background: #DCDCDC;
     color: #000000;
+    opacity: 1;
   }
   .menu li:hover{
     background: white;
   }
   .menu li a:hover{
     color:#000000;
-  }
-  .menu li a {
-      text-decoration:none;
-      color:#ffffff;
   }
   .menu ul {
       display: none;
@@ -314,17 +310,40 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
       float: none;
       background:none;
       width: 100%;
-
       margin: 0;
       padding: 0;
   }
   .menu ul li a {
+    opacity: 1;
     margin: 0;
-    padding: 0;
+    padding-right: 0px;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     float: left;
-    font-size: 8pt;
+    font-size: 7pt;
     display:block;
-    color:#797979;
+    color:#ffffff;
+    font-weight: normal;
+    width: 100%;
+    text-align: left;
+  }
+
+  .menu ul li a:hover {
+    color: #FFFFFF;
+    background-color: none;
+    text-decoration:underline;
+  }
+  .separator{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 113px;
+  }
+  .separator img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
   .about{
     margin-left: 20%;

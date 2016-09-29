@@ -7,7 +7,7 @@
   <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <style>
 
   .slider {
@@ -87,18 +87,10 @@
          <li>
              <a  href="#">создаем</a>
              <ul class="">
-                 <li>
-                     <a href="#">ВЕБ-САЙТЫ</a>
-                 </li>
-                 <li>
-                     <a href="#">ПРИЛОЖЕНИЯ</a>
-                 </li>
-                 <li>
-                     <a href="#">ПО</a>
-                 </li>
-                 <li>
-                     <a href="#">ПОРТАЛЫ</a>
-                 </li>
+                 <li> <a href="#">ВЕБ-САЙТЫ</a> </li>
+                 <li> <a href="#">ПРИЛОЖЕНИЯ</a> </li>
+                 <li> <a href="#">ПО</a> </li>
+                 <li> <a href="#">ПОРТАЛЫ</a> </li>
              </ul>
          </li>
          <li>
@@ -159,7 +151,7 @@
                 <a id="first_li" href="#">главная</a>
             </li>
             <li>
-                <a   href="#">создаем</a>
+                <a id="lis"  href="#">создаем</a>
                 <ul class="sub-menu">
                     <li>
                         <a href="#">ВЕБ-САЙТЫ</a>
@@ -176,8 +168,8 @@
                 </ul>
             </li>
             <li>
-                <a  href="#">Предлагаем</a>
-                <ul class="sub-menu">
+                <a id="lis1" href="#">Предлагаем</a>
+                <ul class="sub-menu2">
                   <li>
                       <a href="#">КОНСТАЛТИНГ</a>
                   </li>
@@ -206,7 +198,27 @@
             </li>
         </ul>
     </div>
+    <script type="text/javascript">
+$(document).ready(function(){
+$(".sub-menu, #lis").hover(function(){
+$("a#lis").css('color','black');
+},
+function(){
+$("a#lis").css('color','white');
+}
+);
+});
+$(document).ready(function(){
+$(".sub-menu2, #lis1").hover(function(){
+$("a#lis1").css('color','black');
+},
+function(){
+$("a#lis1").css('color','white');
+}
+);
+});
 
+</script>
   <div class="about">
     <div class="about_header">
       Есть задача - решим ее
@@ -218,6 +230,9 @@
       <input id= "point"  type="button" name="name" value="ОЦЕНИТЬ ПРОЕКТ">
     </div>
   </div>
+  </div>
+  <div class="separator">
+    <img src="besprime_website/images/icons/separator-gradiline-lg.png" alt="" />
   </div>
   <div class="description">
     <div class="description_text">

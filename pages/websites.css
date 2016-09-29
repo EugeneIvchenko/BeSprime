@@ -2,21 +2,123 @@ body{
   background-color: white;
   margin: 0;
 }
-.header{
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: center;
-  margin-bottom: 1%;
+@font-face {
+font-family: HelveticaNeueCyr-Medium;
+src: url(../besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
 }
-.header div{
-  display: inline-block;
+@font-face {
+font-family: HelveticaNeueCyr-Bold;
+src: url(../besprime_website/fonts/HelveticaNeueCyr-Bold.otf);
 }
-.language{
-  float:left;
+@font-face {
+font-family: HelveticaNeueCyr-Thin;
+src: url(../besprime_website/fonts/HelveticaNeueCyr-Thin.otf);
 }
-.contacts{
-  float: right;
+@font-face {
+font-family: HelveticaNeueCyr-Light;
+src: url(../besprime_website/fonts/HelveticaNeueCyr-Light.otf);
 }
+@font-face {
+font-family: HelveticaNeueCyr-Roman;
+src: url(../besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
+}
+@media (max-width:1366px) {
+  .header{
+    top:0;
+    height: 80px;
+  }
+  /*Header*/
+  .leftpart{
+    top:0;
+    float:left;
+    margin-left: 20%;
+    height:80px;
+    width:100px;
+  }
+  .language{
+    float: left;
+    margin-bottom: 2px;
+  }
+  .language a{
+    font-size: 6pt;
+    top: 0;
+    padding: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+  .language div{
+    display: inline-block;
+  }
+  .l1{
+    font-weight: bold;
+    margin-right: 3px;
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  .l2{
+    font-family: HelveticaNeueCyr;
+  }
+  .l2:hover{
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  .l2:active{
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  .logos {
+    float: left;
+  }
+  .logos div{
+    display:inline-block;
+  }
+  .logos img{
+    height: 27px;
+    width:27px;
+  }
+  .logo{
+    float:left;
+    margin-top: 15px;
+    margin-left: 200px;
+  }
+  .logo div{
+      display: inline-block;
+  }
+  .favicon{
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .favicon img{
+    height:50px;
+    width:50px;
+  }
+  .title{
+    margin-left: 8px;
+    margin-top: 2px;
+    width:200px;
+  }
+  .title_top{
+    font-size: 20pt;
+    float: left;
+  }
+  .title_bot{
+    font-size: 10pt;
+    float: left;
+    color: red;
+  }
+  .contacts{
+    margin-top: 15px;
+    margin-right: 20%;
+    float:right;
+  }
+  .top_contacts{
+    font-family: HelveticaNeueCyr-Bold;
+    margin-bottom: 5px;
+  }
+  .low_contacts{
+    font-family: HelveticaNeueCyr-Bold;
+  }
+
 .menu img{
   float: left;
   width: 100%;
@@ -26,96 +128,114 @@ body{
   position: absolute;
   float: right;
 }
-@font-face {
-font-family: HelveticaNeueCyr-Medium;
-src: url(C:/Users/TITO/WebstormProjects/BeSprime/besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
-}
 .navbar{
+  margin-left: 18.5%;
+  margin-right: 20%;
+  top:80px;
+  position: absolute;
+  width: 61.5%;
+  display: table;
+  background-color: none;
+  border: none;
+}
+.menu{
+    display: table-row;
+    background-color: none;
+}
+.menu li{
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  background-color: none;
+}
+
+.menu li a{
+display: block;
+  padding: 12px 5px;
   text-transform: uppercase;
   font-family: HelveticaNeueCyr-Medium;
   font-size: 7pt;
-  margin-right: 20%;
-  margin-left: 18%;
-  position: absolute;
-}/*размещение меню на фоне*/
-.bar {
-  background-color: none;
-  min-width: 470px;
-}/*вид менюхи*/
-.podmenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-} /*скрыть выпадающий список*/
-.bar li:hover ul {
-  display: block;
-}/*отображение выпадающего списка*/
-.bar, .podmenu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}/*убрали маркеры и отступы стандартные*/
-.bar li {
-  float: left;
-  position: relative;
-  height: 100%;
-}/*выпадающее меню не смещает нижний контент */
-.main_li a, .first_li a, .last_li a{
-display: block;
-padding-top: 12px;
-padding-bottom: 12px;
-text-decoration: none;
-text-align: center;
-padding-left: 23px;
-padding-right: 23.5px;
-}
-.main_li a, .first_li a{
-  color: #FFFFFF;
-}
-.first_li a, .last_li a{
+  text-decoration:none;
+  color:#ffffff;
+  text-align: center;
+  opacity: 0.8;
+  text-transform: uppercase;
   font-weight:bold;
 }
-.last_li a{
-  background-color: #DCDCDC;
-  color: #000000;
-}
-.main_li a {
-  opacity: 0.8;
-}
-.podmenu:hover{
-  background-color: rgba(0, 0, 0, 0.4);;
-}
-.podmenu li{
-  font-size: 7pt;
-}
-.podmenu li a{
+#first_li{
   opacity: 1;
+}
+#last_li{
+  background: #DCDCDC;
+  color: #000000;
+  opacity: 1;
+}
+.menu li:hover{
+  background: white;
+}
+.menu li a:hover{
+  color:#000000;
+}
+.menu ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    margin: 0;
+    padding: 3px 0;
+    background-color: rgba(0, 0, 0, 0.4);;
+}
+/* показываем меню второго уровня при наведении */
+.menu li:hover > ul{
+    display: block;
+}
+.menu ul li {
+    display:block;
+    float: none;
+    background:none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li a {
+  opacity: 1;
+  margin: 0;
   padding-right: 0px;
   padding-left: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
+  float: left;
+  font-size: 7pt;
+  display:block;
+  color:#ffffff;
+  font-weight: normal;
+  width: 100%;
+  text-align: left;
 }
-.PO {
-  margin-right: 50px;
-}
-.first_podmenu{
-  margin-top: 10px;
-}
-.last_podmenu{
-  margin-bottom: 10px;
-}
-.main_li a:hover, .first_li a:hover{
-  color:#000000;
-}/*цвет текста меню при наведенитрмлтти*/
-.podmenu li a:hover {
+
+.menu ul li a:hover {
   color: #FFFFFF;
   background-color: none;
   text-decoration:underline;
-}/*цвет при наведении на подменю*/
-.main_li:hover, .first_li:hover{
-  background-color: #FFFFFF
 }
-
+.menu li .drop {
+padding-right:21px;
+background:url("img/drop.png") no-repeat right 8px;
+}
+.menu li:hover .drop {
+background:url("img/drop.png") no-repeat right 7px;
+}
+.separator{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 113px;
+}
+.separator img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .slogan{
   font-size: 40px;
   color:#FFFFFF;
@@ -146,6 +266,7 @@ padding-right: 23.5px;
   margin-top: 160px;
   position: relative;
   height: 200px;
+  width: 250px;
   float: left;
 }
 #point{
@@ -226,10 +347,7 @@ padding-right: 23.5px;
   color: black;
   text-align: center;
 }
-@font-face {
-font-family: HelveticaNeueCyr-Roman;
-src: url(C:/Users/TITO/WebstormProjects/BeSprime/besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
-}
+
 .description_min{
   font-family: HelveticaNeueCyr-Roman;
   font-size: 12px;
@@ -390,4 +508,4 @@ src: url(C:/Users/TITO/WebstormProjects/BeSprime/besprime_website/fonts/Helvetic
   text-decoration: none;
   vertical-align: middle;
 }
-/*коммит
+}
