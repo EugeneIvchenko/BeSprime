@@ -22,11 +22,119 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Light.otf);
 font-family: HelveticaNeueCyr-Roman;
 src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
 }
-@media (max-width:1366px) {
-  .header{
+@media (max-width:2000px){
+  .leftpart{
     top:0;
-    height: 80px;
+    float:left;
+    margin-left: 20%;
+    height:80px;
+    width:100px;
   }
+  .language{
+    float: left;
+    margin-bottom: 2px;
+  }
+  .language a{
+    font-size: 6pt;
+    top: 0;
+    padding: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+  }
+  .language div{
+    display: inline-block;
+  }
+  .l1{
+    font-weight: bold;
+    margin-right: 3px;
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  .l2{
+    font-family: HelveticaNeueCyr;
+  }
+  .l2:hover{
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  .l2:active{
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  .logos {
+    float: left;
+  }
+  .logos div{
+    display:inline-block;
+  }
+  .logos img{
+    height: 27px;
+    width:27px;
+  }
+  .logo{
+    float:left;
+    margin-top: 15px;
+    margin-left: 200px;
+  }
+  .logo div{
+      display: inline-block;
+  }
+  .favicon{
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .favicon img{
+    height:50px;
+    width:50px;
+  }
+  .title{
+    margin-left: 8px;
+    margin-top: 2px;
+    width:200px;
+  }
+  .title_top{
+    font-size: 20pt;
+    float: left;
+  }
+  .title_bot{
+    font-size: 10pt;
+    float: left;
+    color: red;
+  }
+  .contacts{
+    margin-top: 15px;
+    margin-right: 20%;
+    float:right;
+  }
+  .top_contacts{
+    font-family: HelveticaNeueCyr-Bold;
+    margin-bottom: 5px;
+  }
+  .low_contacts{
+    font-family: HelveticaNeueCyr-Bold;
+  }
+  #togglebox{
+    display: none;
+  }
+  #navtoggler{
+    display: none;
+  }
+  #expand-fullpagemenu{
+    display: none;
+  }
+  .myMenu{
+    height: 603px;
+  }
+  .menu_img img{
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  /*Changes starts here*/
+
+}
+@media (max-width:1366px) {
+
   /*Header*/
   .leftpart{
     top:0;
@@ -118,23 +226,14 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
   .low_contacts{
     font-family: HelveticaNeueCyr-Bold;
   }
-
-  .rectangle{
+  #togglebox{
     display: none;
   }
-  .mobile-menu{
-      display:none;
-      width:100%;
-      padding:11px;
-      background:#3E4156;
-      color:#ffffff;
-      text-transform:uppercase;
-      font-weight:600;
+  #navtoggler{
+    display: none;
   }
-  .mobile-menu:hover{
-      background:#3E4156;
-      color:#ffffff;
-      text-decoration:none;
+  #expand-fullpagemenu{
+    display: none;
   }
   /*Menu*/
   .myMenu{
@@ -146,27 +245,46 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     position: relative;
   }
   .navbar{
-    width: 100%;
-    float: left;
     margin-left: 20%;
     margin-right: 20%;
+    top:80px;
     position: absolute;
-    text-transform: uppercase;
-    font-family: HelveticaNeueCyr-Medium;
-    font-size: 9pt;
+    width: 60%;
+    display: table;
+    background-color: none;
+    border: none;
   }
   .menu{
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display:inline-block;
+      display: table-row;
       background-color: none;
   }
   .menu li{
-      display: inline-block;
-      position: relative;
-      margin: auto;
-      padding: auto;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    background-color: none;
+  }
+
+  .menu li a{
+  display: block;
+    padding: 10px 5px;
+
+    text-transform: uppercase;
+    font-family: HelveticaNeueCyr-Medium;
+    font-size: 10pt;
+    text-decoration:none;
+    color:#ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #first_li{
+    padding-left: 0;
+    margin-left: 0;
+    float: left;
+  }
+  #last_li{
+    background: #DCDCDC;
+    color: #000000;
   }
   .menu li:hover{
     background: white;
@@ -176,16 +294,15 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
   }
   .menu li a {
       text-decoration:none;
-      display:block;
       color:#ffffff;
-      padding: 10px 13px;
   }
   .menu ul {
       display: none;
       position: absolute;
+      width: 100%;
       left: 0px;
       margin: 0;
-      padding: 0;
+      padding: 3px 0;
       background-color: rgba(0, 0, 0, 0.4);;
   }
   /* показываем меню второго уровня при наведении */
@@ -211,10 +328,11 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
   }
   .about{
     margin-left: 20%;
-    top: 190px;
+    top: 205px;
     float: left;
     position: absolute;
   }
+  /*Выставить стили*/
   .about_header{
     font-size: 40pt;
     color:#FFFFFF;
@@ -223,15 +341,15 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     font-size: 16px;
     color:#FFFFFF;
   }
-
+  /*Create barder*/
   #point{
-    border: none;
-    background-color: #FFFFFF;
-    padding: 14px 40px;
-    font-size: 10px;
-    font-family: HelveticaNeueCyr-Bold;
-    text-decoration: none;
-    vertical-align: middle;
+   border: 1px solid #FFFFFF;
+   background-color: #FFFFFF;
+   padding: 14px 40px;
+   font-size: 10px;
+   font-family: HelveticaNeueCyr-Bold;
+   text-decoration: none;
+   vertical-align: middle;
   }
   .estimate{
     margin-left: 10%;
@@ -240,11 +358,10 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
   }
 
   .description{
-    width:780px;
-    margin-top: 50px;
+    margin-top: 140px;
     margin-bottom: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: center;
     padding-top:60px;
     padding-bottom: 60px;
@@ -508,7 +625,7 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
   }
   .contacts{
     margin-top: 30px;
-    margin-left:;
+    width: 200px;
     float: left;
   }
   .contacts div{
@@ -523,6 +640,236 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     font-family: HelveticaNeueCyr-Bold;
     font-size: 16pt;
   }
+  /*menu*/
+
+  .outer-menu {
+            position: relative;
+            margin-left: 60%;
+             z-index: 1;
+  }
+  .outer-menu .checkbox-toggle {
+             position: absolute;
+             top: 0;
+             left: 0;
+             z-index: 2;
+             cursor: pointer;
+             width: 60px;
+             height: 60px;
+             opacity: 0;
+  }
+  .outer-menu .checkbox-toggle:checked + .hamburger > div {
+             -webkit-transform: rotate(135deg);
+             -ms-transform: rotate(135deg);
+             transform: rotate(135deg);
+  }
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+             top: 0;
+             -webkit-transform: rotate(90deg);
+             -ms-transform: rotate(90deg);
+             transform: rotate(90deg);
+  }
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+             opacity: 0;
+  }
+  .outer-menu .checkbox-toggle:checked ~ .hamburger_menu {
+             pointer-events: auto;
+  }
+  .outer-menu .checkbox-toggle:checked ~ .hamburger_menu > div {
+             width: 200vw;
+             height: 200vw;
+  }
+  .outer-menu .checkbox-toggle:checked ~ .hamburger_menu > div > div {
+             opacity: 1;
+             -webkit-transition: opacity 0.3s ease 0.3s;
+             transition: opacity 0.3s ease 0.3s;
+  }
+  .outer-menu .checkbox-toggle:hover + .hamburger {
+             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+             -webkit-transform: rotate(225deg);
+             -ms-transform: rotate(225deg);
+             transform: rotate(225deg);
+  }
+  .outer-menu .hamburger {
+             position: absolute;
+             top: 0;
+             left: 0;
+             z-index: 1;
+             width: 60px;
+             height: 60px;
+             padding: .5em 1em;
+             background: rgba(33, 150, 243, 0.75);
+             border-radius: 0 0.12em 0.12em 0;
+             cursor: pointer;
+             -webkit-transition: box-shadow 0.3s ease;
+             transition: box-shadow 0.3s ease;
+             -webkit-backface-visibility: hidden;
+             backface-visibility: hidden;
+             display: -webkit-box;
+             display: -webkit-flex;
+             display: -ms-flexbox;
+             display: flex;
+             -webkit-box-align: center;
+             -webkit-align-items: center;
+             -ms-flex-align: center;
+             align-items: center;
+             -webkit-box-pack: center;
+             -webkit-justify-content: center;
+             -ms-flex-pack: center;
+             justify-content: center;
+  }
+  .outer-menu .hamburger > div {
+             position: relative;
+             -webkit-box-flex: 0;
+             -webkit-flex: none;
+             -ms-flex: none;
+             flex: none;
+             width: 100%;
+             height: 2px;
+             background: #fefefe;
+             -webkit-transition: all 0.3s ease;
+             transition: all 0.3s ease;
+             display: -webkit-box;
+             display: -webkit-flex;
+             display: -ms-flexbox;
+             display: flex;
+             -webkit-box-align: center;
+             -webkit-align-items: center;
+             -ms-flex-align: center;
+             align-items: center;
+             -webkit-box-pack: center;
+             -webkit-justify-content: center;
+             -ms-flex-pack: center;
+             justify-content: center;
+  }
+  .outer-menu .hamburger > div:before,
+  .outer-menu .hamburger > div:after {
+             content: '';
+             position: absolute;
+             z-index: 1;
+             top: -10px;
+             left: 0;
+             width: 100%;
+             height: 2px;
+             background: inherit;
+             -webkit-transition: all 0.3s ease;
+             transition: all 0.3s ease;
+  }
+  .outer-menu .hamburger > div:after {
+             top: 10px;
+  }
+  .outer-menu .hamburger_menu {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             pointer-events: none;
+             display: -webkit-box;
+             display: -webkit-flex;
+             display: -ms-flexbox;
+             display: flex;
+             -webkit-box-align: center;
+             -webkit-align-items: center;
+             -ms-flex-align: center;
+             align-items: center;
+             -webkit-box-pack: center;
+             -webkit-justify-content: center;
+             -ms-flex-pack: center;
+             justify-content: center;
+  }
+  .outer-menu .hamburger_menu > div {
+             width: 0;
+             height: 0;
+             color: #fefefe;
+             background: rgba(41, 98, 255, 0.97);
+             border-radius: 50%;
+             -webkit-transition: all 0.3s ease;
+             transition: all 0.3s ease;
+             -webkit-box-flex: 0;
+             -webkit-flex: none;
+             -ms-flex: none;
+             flex: none;
+             display: -webkit-box;
+             display: -webkit-flex;
+             display: -ms-flexbox;
+             display: flex;
+             -webkit-box-align: center;
+             -webkit-align-items: center;
+             -ms-flex-align: center;
+             align-items: center;
+             -webkit-box-pack: center;
+             -webkit-justify-content: center;
+             -ms-flex-pack: center;
+             justify-content: center;
+  }
+  .outer-menu .hamburger_menu > div > div {
+             text-align: center;
+             max-width: 90vw;
+             max-height: 100vh;
+             opacity: 0;
+             -webkit-transition: opacity 0.3s ease;
+             transition: opacity 0.3s ease;
+             overflow-y: auto;
+             -webkit-box-flex: 0;
+             -webkit-flex: none;
+             -ms-flex: none;
+             flex: none;
+             display: -webkit-box;
+             display: -webkit-flex;
+             display: -ms-flexbox;
+             display: flex;
+             -webkit-box-align: center;
+             -webkit-align-items: center;
+             -ms-flex-align: center;
+             align-items: center;
+             -webkit-box-pack: center;
+             -webkit-justify-content: center;
+             -ms-flex-pack: center;
+             justify-content: center;
+  }
+  .outer-menu .hamburger_menu > div > div > ul {
+             list-style: none;
+             padding: 0 1em;
+             margin: 0;
+             display: block;
+             max-height: 100vh;
+  }
+  .outer-menu .hamburger_menu > div > div > ul > li {
+             padding: 0;
+             margin: 1em;
+             font-size: 24px;
+             display: block;
+  }
+  .outer-menu .hamburger_menu > div > div > ul > li > a {
+             position: relative;
+             display: inline;
+             cursor: pointer;
+             -webkit-transition: color 0.3s ease;
+             transition: color 0.3s ease;
+  }
+  .outer-menu .hamburger_menu > div > div > ul > li > a:hover {
+             color: #e5e5e5;
+  }
+  .outer-menu .hamburger_menu > div > div > ul > li > a:hover:after {
+             width: 100%;
+  }
+  .outer-menu .hamburger_menu > div > div > ul > li > a:after {
+             content: '';
+             position: absolute;
+             z-index: 1;
+             bottom: -0.15em;
+             left: 0;
+             width: 0;
+             height: 2px;
+             background: #e5e5e5;
+             -webkit-transition: width 0.3s ease;
+             transition: width 0.3s ease;
+  }
+
+  /*menu_end*/
   .navbar{
     display: none;
   }
@@ -533,13 +880,199 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     display: none;
   }
   .logo{
-    float: left;
-    margin: 0px;
-    margin-right:20px;
+    top:0;
+    left:0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
   }
-  .language{
+  .logo div{
+      display: inline-block;
+  }
+  .favicon{
     float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .favicon img{
+    height:40px;
+    width:40px;
+  }
+  .title{
+    margin-left: 8px;
+    margin-top: 2px;
+
+  }
+  .title_top{
+    font-size: 20pt;
+    float: left;
+  }
+  .title_bot{
+    font-size: 10pt;
+    float: left;
+    color: red;
+  }
+  .contacts{
+    top:100px;
+    position: absolute;
+    float: left;
+  }
+  .contacts div{
     display: inline-block;
+  }
+  .top_contacts{
+    font-family: HelveticaNeueCyr-Bold;
+    font-size: 16pt;
+    margin-right: 50px;
+  }
+  .low_contacts{
+    font-family: HelveticaNeueCyr-Bold;
+    font-size: 16pt;
+  }
+  /*menu*/
+
+  .menuwrapper{
+    height: 40px;
+    width:40px;
+    background: red;
+    float: right;
+  }
+  input[type="checkbox"]#togglebox {
+    /* checkbox used to toggle menu state */
+
+    top:0;
+    float: right;
+    visibility: hidden;
+  }
+
+  label#navtoggler{  /* Main label icon to toggle menu state */
+    z-index: 9;
+    display: block;
+    position: relative;
+    font-size: 8px;
+    /* change font size to change label dimensions. Leave width/height below alone */
+    width: 4em;
+    height: 2.5em;
+    top: 0;
+    left: 0;
+    text-indent: -1000px;
+    border: 0.6em solid black;
+    /* border color */
+    border-width: 0.6em 0;
+    cursor: pointer;
+    background: white;
+  }
+
+
+  label#navtoggler::before{
+    /* inner strip inside label */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.6em;
+    top: 50%;
+    margin-top: -0.3em;
+    left: 0;
+    background: black; /* stripes background color. Change to match border color of parent label above */
+  }
+
+  nav#expand-fullpagemenu{ /* Full screen nav menu */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    -webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+    -webkit-transform: scale(0.9);  /* initially scale down nav size */
+    transform: scale(0.9);
+    background: #AAEDEA;
+    display: block;
+    position: fixed;
+  	z-index: 100;
+    opacity: 0;
+  	text-align: center;
+  	overflow: auto;
+    -moz-transition: visibility 0s 0.5s, opacity 0.5s, -moz-transform 0.5s; /* transition settings */
+    -webkit-transition: visibility 0s 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    transition: visibility 0s 0.5s, opacity 0.5s, transform 0.5s;
+  }
+
+  input[type="checkbox"]#togglebox:checked ~ nav#expand-fullpagemenu{ /* nav state when corresponding checkbox is checked */
+  	visibility: visible;
+  	-webkit-transform: scale(1);
+  	transform: scale(1);
+  	opacity: 1;
+    -ms-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -transition-delay: 0s;
+  }
+
+  nav#expand-fullpagemenu label#closex{ /* Large x close button inside nav */
+    width: 80px;
+    height: 80px;
+  	overflow: hidden;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  	text-indent: -1000px;
+    z-index: 10;
+    top: 0;
+    right: 0;
+  }
+
+  nav#expand-fullpagemenu label#closex::before, nav label#closex::after{ /* render large cross inside close button */
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: black;
+    top: 50%;
+    margin-top: -3px;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  nav#expand-fullpagemenu label#closex::after{ /* render large cross inside close button */
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
+  nav#expand-fullpagemenu a{
+  	text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  nav#expand-fullpagemenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-height: 100%;
+    top: 50%; /* center UL vertically inside nav */
+    -webkit-transform: translateY(-50%); /* center UL vertically inside nav */
+    transform: translateY(-50%);
+    font: bold 2em 'Bitter', sans-serif; /* use google font inside nav UL */
+  }
+
+  nav#expand-fullpagemenu ul li{
+    margin-bottom: 25px;
+  }
+
+  nav#expand-fullpagemenu ul li a{
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  nav#expand-fullpagemenu ul li a:hover{
+    background: lightblue;
   }
   .menu{
     display:none;

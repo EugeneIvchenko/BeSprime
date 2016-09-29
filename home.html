@@ -4,9 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>BeSprime</title>
   <link rel="stylesheet" type="text/css" href="home.css">
+  <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <style media="screen">
+
+  <style>
+
   .slider {
       width: 60%;
       margin: auto;
@@ -21,7 +24,7 @@
   .slick-next:before {
       color: grey;
   }
-  </style>
+</style>
  </head>
  <body>
      <!-- Шапка -->
@@ -62,16 +65,88 @@
      </div>
      <div class="contacts">
        <div class="top_contacts">
-         +38 (044) 221 33 27
+         <a>+38 (044) 221 33 27</a>
        </div>
        <div class="low_contacts">
-         +38 (067) 447 74 73
+         <a >+38 (067) 447 74 73</a>
        </div>
      </div>
+     <div class="menuwrapper">
 
+     <input type="checkbox" id="togglebox">
+     <label for="togglebox" id="navtoggler"></label>
 
+     <nav id="expand-fullpagemenu">
+
+     <label for="togglebox" id="closex">Close</label>
+
+     <ul class="">
+         <li>
+             <a href="#">главная</a>
+         </li>
+         <li>
+             <a  href="#">создаем</a>
+             <ul class="">
+                 <li>
+                     <a href="#">ВЕБ-САЙТЫ</a>
+                 </li>
+                 <li>
+                     <a href="#">ПРИЛОЖЕНИЯ</a>
+                 </li>
+                 <li>
+                     <a href="#">ПО</a>
+                 </li>
+                 <li>
+                     <a href="#">ПОРТАЛЫ</a>
+                 </li>
+             </ul>
+         </li>
+         <li>
+             <a  href="#">Предлагаем</a>
+             <ul class="">
+               <li>
+                   <a href="#">КОНСТАЛТИНГ</a>
+               </li>
+               <li>
+                   <a href="#">ПРОЕКТИРОВАНИЕ</a>
+               </li>
+               <li>
+                   <a href="#">БИЗНЕС-АНАЛИЗ</a>
+               </li>
+             </ul>
+         </li>
+         <li>
+             <a  href="#"></i>Наши проекты</a>
+         </li>
+         <li>
+             <a  href="#"></i>О компании</a>
+         </li>
+         <li>
+             <a  href="#"></i>Новости</a>
+         </li>
+         <li>
+             <a  href="#"></i>Контакты</a>
+         </li>
+         <li>
+             <a  href="#"></i>Нанять нас</a>
+         </li>
+     </ul>
+
+     </nav>
 
      </div>
+     <script type="text/javascript">
+
+     	// Extra function to control menu state from anywhere on your page/ inside your script
+     	function expandfullscreenmenu(action){ //param: 'open', 'close', or empty to toggle menu state
+     		var togglebox = document.getElementById("togglebox")
+     		var newstate =	(action == 'open')? true : (action == 'close')? false : !togglebox.checked
+     		togglebox.checked = newstate
+     	}
+
+     </script>
+     </div>
+
   <!-- Menu -->
 
   <div class="myMenu">
@@ -81,10 +156,10 @@
     <div class="navbar">
         <ul class="menu">
             <li>
-                <a href="#">главная</a>
+                <a id="first_li" href="#">главная</a>
             </li>
             <li>
-                <a  href="#">создаем</a>
+                <a   href="#">создаем</a>
                 <ul class="sub-menu">
                     <li>
                         <a href="#">ВЕБ-САЙТЫ</a>
@@ -127,7 +202,7 @@
                 <a  href="#"></i>Контакты</a>
             </li>
             <li>
-                <a  href="#"></i>Нанять нас</a>
+                <a id="last_li"  href="#"></i>Нанять нас</a>
             </li>
         </ul>
     </div>
@@ -140,9 +215,7 @@
       Вас приветствует команда професионалов в сфере разработки<br> ПО, приложений, сайтов,а также консалтинга.
     </div>
     <div class="estimate">
-
-      <input id= "point" type="button" name="name" value="ОЦЕНИТЬ ПРОЕКТ">
-
+      <input id= "point"  type="button" name="name" value="ОЦЕНИТЬ ПРОЕКТ">
     </div>
   </div>
   </div>
