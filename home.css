@@ -542,47 +542,69 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
   .text2 a{
     text-align: center;
   }
-
-
-  .block_g3_1{
-    float: left;
-    width: 33%;
-    height:270px;
-    overflow: hidden
-    margin-right: 0.5%;
-    background: linear-gradient(to top, #FFFFFF, #DCDCDC);
-    position: relative;
+  .polosa{
+    margin-bottom: -5%;
+    height: 70px;
+    background-color: #DCDCDC;
   }
-  .block_g3_2{
-    float: left;
-    width: 33%;
-    height:270px;
-    overflow: hidden;
-    background: linear-gradient(to top, #FFFFFF, #DCDCDC);
-    position: relative;
+  .tabulation{
+    margin-top: 5%;
+    padding-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
   }
-  .block_g3_1 img{
-    width: 100%;
+  .tabulation a{
+    border-bottom: 2px solid #FF0000;
+  }
+  .do{
+    background-color: #DCDCDC;
+    height: 1150px;
+  }
+  .do_white{
+    background-color: #FFFFFF;
+    margin-right: 175px;
+    margin-left: 190px;
+    height: 1100px;
+  }
+  .do img{
     height: 100%;
-  }
-  .block_g3_2 img{
     width: 100%;
-    height: 100%;
   }
+  .block_g3_1, .block_g3_4, .block_g3_7{
+    margin-left: 75px;
+    float: left;
+    width: 28%;
+    margin-right: 3px;
+    position: relative;
+    margin-bottom: -2px;
+  }
+  .block_g3_2, .block_g3_5, .block_g3_8{
+    float: left;
+    width: 28%;
+    margin-right: 3px;
+    position: relative;
+    margin-bottom: -2px;
+  }
+  .block_g3_3, .block_g3_6, .block_g3_9{
+    float: left;
+    width: 28%;
+    position: relative;
+    margin-right: 75px;
+    margin-bottom: -2px;
+  }
+  
   .button2{
-    margin-top: 910px;
     padding: 2px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
-    margin-bottom: 85px;
+    margin-top: -100px;
   }
   #send{
-    margin-top: 5%;
     border: none;
     background-color: #f50906;
-    padding: 14px 40px;
+    padding: 18px 30px;
     color: #FFFFFF;
-    font-size: 10px;
+    font-size: 7pt;
     font-family: HelveticaNeueCyr-Bold;
     text-decoration: none;
     vertical-align: middle;
