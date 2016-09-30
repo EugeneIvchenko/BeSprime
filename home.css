@@ -2,6 +2,7 @@ body{
   background-color: white;
   margin: 0;
 }
+
 @font-face {
 font-family: HelveticaNeueCyr-Medium;
 src: url(besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
