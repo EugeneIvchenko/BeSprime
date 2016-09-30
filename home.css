@@ -342,10 +342,11 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     float:right;
   }
   #marker{
-    height: 8px;
+    margin-top: -1px;
+    padding-left: 35px;
+    height: 6px;
     width: 10px;
     float: left;
-    top: 0;
   }
   .separator{
     position: absolute;
