@@ -113,7 +113,37 @@
           </li>
       </ul>
   </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $(".sub-menu, #lis").hover(function(){
+  $("").css('color','black');
+  },
+  function(){
+  $("a#lis").css('color','white');
+  }
+  );
+  });
+  $(document).ready(function(){
+  $(".sub-menu2, #lis1").hover(function(){
+  $("a#lis1").css('color','black');
+  },
+  function(){
+  $("a#lis1").css('color','white');
+  }
+  );
+  });
 
+  $(document).ready(function(){
+  $(".sub-menu2, #lis1").hover(function(){
+  $("#nav").attr('src','besprime_website/icons/arrow_active.png');
+  },
+  function(){
+  $("#nav").attr('src','besprime_website/icons/arrow.png');
+  }
+  );
+  });
+
+  </script>
 <div class="about">
   <div class="slogan">
     Веб-Сайты
