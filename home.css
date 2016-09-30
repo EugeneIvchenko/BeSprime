@@ -341,6 +341,12 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     width: 8px;
     float:right;
   }
+  #marker{
+    height: 8px;
+    width: 10px;
+    float: left;
+    top: 0;
+  }
   .separator{
     position: absolute;
     width: 100%;
