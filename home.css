@@ -328,11 +328,18 @@ src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
     width: 100%;
     text-align: left;
   }
-
   .menu ul li a:hover {
     color: #FFFFFF;
     background-color: none;
     text-decoration:underline;
+  }
+  #nav{
+    margin-left: -13px;
+    margin-right: 10px;
+    padding-top: 2px;
+    height: 5px;
+    width: 8px;
+    float:right;
   }
   .separator{
     position: absolute;
