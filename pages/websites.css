@@ -2,32 +2,32 @@ body{
   background-color: white;
   margin: 0;
 }
+
 @font-face {
 font-family: HelveticaNeueCyr-Medium;
-src: url(../besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
+src: url(besprime_website/fonts/HelveticaNeueCyr-Medium.otf);
 }
 @font-face {
 font-family: HelveticaNeueCyr-Bold;
-src: url(../besprime_website/fonts/HelveticaNeueCyr-Bold.otf);
+src: url(besprime_website/fonts/HelveticaNeueCyr-Bold.otf);
 }
 @font-face {
 font-family: HelveticaNeueCyr-Thin;
-src: url(../besprime_website/fonts/HelveticaNeueCyr-Thin.otf);
+src: url(besprime_website/fonts/HelveticaNeueCyr-Thin.otf);
 }
 @font-face {
 font-family: HelveticaNeueCyr-Light;
-src: url(../besprime_website/fonts/HelveticaNeueCyr-Light.otf);
+src: url(besprime_website/fonts/HelveticaNeueCyr-Light.otf);
 }
 @font-face {
 font-family: HelveticaNeueCyr-Roman;
-src: url(../besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
+src: url(besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
 }
-@media (max-width:1366px) {
-  .header{
-    top:0;
-    height: 80px;
-  }
-  /*Header*/
+@font-face {
+font-family: OpenSans-CondLight;
+src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
+}
+@media (max-width:2000px){
   .leftpart{
     top:0;
     float:left;
@@ -118,7 +118,15 @@ src: url(../besprime_website/fonts/HelveticaNeueCyr-Roman.otf);
   .low_contacts{
     font-family: HelveticaNeueCyr-Bold;
   }
-
+  #togglebox{
+    display: none;
+  }
+  #navtoggler{
+    display: none;
+  }
+  #expand-fullpagemenu{
+    display: none;
+  }
 .menu img{
   float: left;
   width: 100%;

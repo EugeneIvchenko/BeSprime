@@ -249,6 +249,9 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     width: 100%;
     position: relative;
   }
+  .menu_img_small img{
+    display: none;
+  }
   .navbar{
     margin-left: 18.5%;
     margin-right: 20%;
@@ -407,6 +410,8 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
   }
 
   .description{
+    font-family: HelveticaNeueCyr-Roman;
+    font-size: 9pt;
     margin-top: 140px;
     margin-bottom: 50px;
     margin-left: 30%;
@@ -417,7 +422,6 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     border-top: 2px solid #F5F5F5;
     border-bottom: 2px solid #F5F5F5;
   }
-
   .create{
     margin-left: 20%;
     margin-right: 20%;
@@ -425,10 +429,8 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
   }
   .subtitle {
     text-align: center;
-
     margin-bottom: 50px;
   }
-
   .subtitle a{
     border-bottom: 2px solid #FF0000;
     margin-top: 50px;
@@ -468,10 +470,14 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     height: auto;
   }
   .text1{
+    font-family: HelveticaNeueCyr-Bold;
+    font-size: 14pt;
     position: absolute;
     bottom: 100px;
+    float: left;
+    left: 0;
     transform: rotate(-90deg);
-    left:5px;
+    color:#FFFFFF;
   }
   .space{
     background: #F5F5F5;
@@ -532,7 +538,7 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
   }
   .text2{
     font-size: 100%;
-    font-weight: bold;
+    font-family: HelveticaNeueCyr-Bold;
     color: white;
     position: absolute;
     bottom: 0;
@@ -592,7 +598,7 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     margin-right: 75px;
     margin-bottom: -2px;
   }
-  
+
   .button2{
     padding: 2px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -619,12 +625,12 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     margin-bottom: 100px;
   }
   .block4_1{
-    width:auto;
     height: 100px;
+    padding-right: 25px;
+    border-right: 2px solid grey;
   }
   .block4_1 img{
-    width: 100%;
-    height: 100%;
+    height: 50px;
   }
   .form{
     padding-bottom: 2%;
@@ -711,235 +717,6 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     font-family: HelveticaNeueCyr-Bold;
     font-size: 16pt;
   }
-  /*menu*/
-
-  .outer-menu {
-            position: relative;
-            margin-left: 60%;
-             z-index: 1;
-  }
-  .outer-menu .checkbox-toggle {
-             position: absolute;
-             top: 0;
-             left: 0;
-             z-index: 2;
-             cursor: pointer;
-             width: 60px;
-             height: 60px;
-             opacity: 0;
-  }
-  .outer-menu .checkbox-toggle:checked + .hamburger > div {
-             -webkit-transform: rotate(135deg);
-             -ms-transform: rotate(135deg);
-             transform: rotate(135deg);
-  }
-  .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
-  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-             top: 0;
-             -webkit-transform: rotate(90deg);
-             -ms-transform: rotate(90deg);
-             transform: rotate(90deg);
-  }
-  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-             opacity: 0;
-  }
-  .outer-menu .checkbox-toggle:checked ~ .hamburger_menu {
-             pointer-events: auto;
-  }
-  .outer-menu .checkbox-toggle:checked ~ .hamburger_menu > div {
-             width: 200vw;
-             height: 200vw;
-  }
-  .outer-menu .checkbox-toggle:checked ~ .hamburger_menu > div > div {
-             opacity: 1;
-             -webkit-transition: opacity 0.3s ease 0.3s;
-             transition: opacity 0.3s ease 0.3s;
-  }
-  .outer-menu .checkbox-toggle:hover + .hamburger {
-             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
-             -webkit-transform: rotate(225deg);
-             -ms-transform: rotate(225deg);
-             transform: rotate(225deg);
-  }
-  .outer-menu .hamburger {
-             position: absolute;
-             top: 0;
-             left: 0;
-             z-index: 1;
-             width: 60px;
-             height: 60px;
-             padding: .5em 1em;
-             background: rgba(33, 150, 243, 0.75);
-             border-radius: 0 0.12em 0.12em 0;
-             cursor: pointer;
-             -webkit-transition: box-shadow 0.3s ease;
-             transition: box-shadow 0.3s ease;
-             -webkit-backface-visibility: hidden;
-             backface-visibility: hidden;
-             display: -webkit-box;
-             display: -webkit-flex;
-             display: -ms-flexbox;
-             display: flex;
-             -webkit-box-align: center;
-             -webkit-align-items: center;
-             -ms-flex-align: center;
-             align-items: center;
-             -webkit-box-pack: center;
-             -webkit-justify-content: center;
-             -ms-flex-pack: center;
-             justify-content: center;
-  }
-  .outer-menu .hamburger > div {
-             position: relative;
-             -webkit-box-flex: 0;
-             -webkit-flex: none;
-             -ms-flex: none;
-             flex: none;
-             width: 100%;
-             height: 2px;
-             background: #fefefe;
-             -webkit-transition: all 0.3s ease;
-             transition: all 0.3s ease;
-             display: -webkit-box;
-             display: -webkit-flex;
-             display: -ms-flexbox;
-             display: flex;
-             -webkit-box-align: center;
-             -webkit-align-items: center;
-             -ms-flex-align: center;
-             align-items: center;
-             -webkit-box-pack: center;
-             -webkit-justify-content: center;
-             -ms-flex-pack: center;
-             justify-content: center;
-  }
-  .outer-menu .hamburger > div:before,
-  .outer-menu .hamburger > div:after {
-             content: '';
-             position: absolute;
-             z-index: 1;
-             top: -10px;
-             left: 0;
-             width: 100%;
-             height: 2px;
-             background: inherit;
-             -webkit-transition: all 0.3s ease;
-             transition: all 0.3s ease;
-  }
-  .outer-menu .hamburger > div:after {
-             top: 10px;
-  }
-  .outer-menu .hamburger_menu {
-             position: fixed;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             pointer-events: none;
-             display: -webkit-box;
-             display: -webkit-flex;
-             display: -ms-flexbox;
-             display: flex;
-             -webkit-box-align: center;
-             -webkit-align-items: center;
-             -ms-flex-align: center;
-             align-items: center;
-             -webkit-box-pack: center;
-             -webkit-justify-content: center;
-             -ms-flex-pack: center;
-             justify-content: center;
-  }
-  .outer-menu .hamburger_menu > div {
-             width: 0;
-             height: 0;
-             color: #fefefe;
-             background: rgba(41, 98, 255, 0.97);
-             border-radius: 50%;
-             -webkit-transition: all 0.3s ease;
-             transition: all 0.3s ease;
-             -webkit-box-flex: 0;
-             -webkit-flex: none;
-             -ms-flex: none;
-             flex: none;
-             display: -webkit-box;
-             display: -webkit-flex;
-             display: -ms-flexbox;
-             display: flex;
-             -webkit-box-align: center;
-             -webkit-align-items: center;
-             -ms-flex-align: center;
-             align-items: center;
-             -webkit-box-pack: center;
-             -webkit-justify-content: center;
-             -ms-flex-pack: center;
-             justify-content: center;
-  }
-  .outer-menu .hamburger_menu > div > div {
-             text-align: center;
-             max-width: 90vw;
-             max-height: 100vh;
-             opacity: 0;
-             -webkit-transition: opacity 0.3s ease;
-             transition: opacity 0.3s ease;
-             overflow-y: auto;
-             -webkit-box-flex: 0;
-             -webkit-flex: none;
-             -ms-flex: none;
-             flex: none;
-             display: -webkit-box;
-             display: -webkit-flex;
-             display: -ms-flexbox;
-             display: flex;
-             -webkit-box-align: center;
-             -webkit-align-items: center;
-             -ms-flex-align: center;
-             align-items: center;
-             -webkit-box-pack: center;
-             -webkit-justify-content: center;
-             -ms-flex-pack: center;
-             justify-content: center;
-  }
-  .outer-menu .hamburger_menu > div > div > ul {
-             list-style: none;
-             padding: 0 1em;
-             margin: 0;
-             display: block;
-             max-height: 100vh;
-  }
-  .outer-menu .hamburger_menu > div > div > ul > li {
-             padding: 0;
-             margin: 1em;
-             font-size: 24px;
-             display: block;
-  }
-  .outer-menu .hamburger_menu > div > div > ul > li > a {
-             position: relative;
-             display: inline;
-             cursor: pointer;
-             -webkit-transition: color 0.3s ease;
-             transition: color 0.3s ease;
-  }
-  .outer-menu .hamburger_menu > div > div > ul > li > a:hover {
-             color: #e5e5e5;
-  }
-  .outer-menu .hamburger_menu > div > div > ul > li > a:hover:after {
-             width: 100%;
-  }
-  .outer-menu .hamburger_menu > div > div > ul > li > a:after {
-             content: '';
-             position: absolute;
-             z-index: 1;
-             bottom: -0.15em;
-             left: 0;
-             width: 0;
-             height: 2px;
-             background: #e5e5e5;
-             -webkit-transition: width 0.3s ease;
-             transition: width 0.3s ease;
-  }
-
   /*menu_end*/
   .navbar{
     display: none;
@@ -949,6 +726,9 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
 @media (max-width: 760px) {
   .leftpart{
     display: none;
+  }
+  .header{
+    height: 60px;
   }
   .logo{
     top:0;
@@ -966,13 +746,12 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     padding: 0;
   }
   .favicon img{
-    height:40px;
-    width:40px;
+    height:60px;
+    width:60px;
   }
   .title{
     margin-left: 8px;
-    margin-top: 2px;
-
+    margin-top: 8px;
   }
   .title_top{
     font-size: 20pt;
@@ -984,54 +763,54 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     color: red;
   }
   .contacts{
-    top:100px;
-    position: absolute;
-    float: left;
+    color: black;
+    position: inherit;
   }
-  .contacts div{
-    display: inline-block;
+  .myMenu{
+    height: 250px;
   }
-  .top_contacts{
-    font-family: HelveticaNeueCyr-Bold;
-    font-size: 16pt;
-    margin-right: 50px;
+  .menu_img img{
+    height: 340px;
   }
-  .low_contacts{
-    font-family: HelveticaNeueCyr-Bold;
-    font-size: 16pt;
+  .separator{
+    margin-top: -20px;
   }
   /*menu*/
-
   .menuwrapper{
     height: 40px;
     width:40px;
-    background: red;
     float: right;
   }
   input[type="checkbox"]#togglebox {
     /* checkbox used to toggle menu state */
-
     top:0;
     float: right;
     visibility: hidden;
   }
-
+.box{
+  margin-top: 10px;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  float: right;
+}
   label#navtoggler{  /* Main label icon to toggle menu state */
     z-index: 9;
     display: block;
     position: relative;
-    font-size: 8px;
+    font-size: 4px;
     /* change font size to change label dimensions. Leave width/height below alone */
-    width: 4em;
-    height: 2.5em;
-    top: 0;
-    left: 0;
+    width: 4.5em;
+    height: 1em;
+    top: 16px;
+    left: 10px;
     text-indent: -1000px;
-    border: 0.6em solid black;
+    border: 0.6em solid white;
     /* border color */
     border-width: 0.6em 0;
     cursor: pointer;
-    background: white;
+    background: red;
   }
 
 
@@ -1045,7 +824,7 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
     top: 50%;
     margin-top: -0.3em;
     left: 0;
-    background: black; /* stripes background color. Change to match border color of parent label above */
+    background: white; /* stripes background color. Change to match border color of parent label above */
   }
 
   nav#expand-fullpagemenu{ /* Full screen nav menu */
@@ -1145,7 +924,8 @@ src: url(besprime_website/fonts/OpenSans-CondLight.ttf);
   nav#expand-fullpagemenu ul li a:hover{
     background: lightblue;
   }
-  .menu{
+  .navbar{
     display:none;
   }
+
 }/*end media queries*/
